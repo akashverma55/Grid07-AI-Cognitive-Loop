@@ -1,0 +1,57 @@
+# ── Environment & Secrets ─────────────────────────────────────
+.env
+*.env
+!.env.example
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+
+# ── Virtual Environments ──────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+langgraph/
+
+# ── HuggingFace Model Cache ───────────────────────────────────
+# Don't commit the downloaded embedding model (420MB)
+models/
+.cache/
+
+# ── Logs ─────────────────────────────────────────────────────
+# Commit .md log files only if you want to show execution results
+# Uncomment below to ignore all logs:
+# logs/
+
+# ── IDE & Editor ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Jupyter ──────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Testing ──────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── ChromaDB ─────────────────────────────────────────────────
+# In case you ever switch to persistent ChromaDB
+chroma_db/
+chromadb/
